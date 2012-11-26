@@ -40,7 +40,7 @@ def xtractQuestions(sentences):
 def printSentences(sentences):
     for sent in sentences:
         print (sent)
-    print("There are " + str(len(sent)) +" sentences.")
+    print >> sys.stderr, "There are " + str(len(sent)) +" sentences."
 
 def test():
     text = """At eight o'clock on Thursday morning Arthur didn't feel very good. Why he is so sick ? """
