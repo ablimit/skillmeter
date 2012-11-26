@@ -1,0 +1,50 @@
+What is garbage collection?
+What is the process that is responsible for doing that in java?
+Garbage collector is responsible for this process
+ What kind of thread is the Garbage collector thread?
+What is a daemon thread?
+How will you invoke any external process in Java?
+)
+ What is the finalize method do?
+What is mutable object and immutable object?
+(Ex., String, Integer, Float, …)
+ What is the basic difference between string and stringbuffer object?
+What is the purpose of Void class?
+What is reflection?
+What is the base class for Error and Exception?
+- Throwable
+ What is the byte range?
+-128 to 127
+ What is the implementation of destroy method in java.. is it native or java code?
+What is a package?
+What are the approaches that you will follow for making a program very efficient?
+What is a DatabaseMetaData?
+What is Locale?
+- A Locale object represents a specific geographical, political, or cultural region
+ How will you load a specific locale?
+- Using ResourceBundle.getBundle(…);
+ What is JIT and its use?
+Is JVM a compiler or an interpreter?
+- Interpreter
+ When you think about optimization, what is the best way to findout the time/memory consuming process?
+- Using profiler
+ What is the purpose of assert keyword used in JDK1.4.x?
+How will you get the platform dependent values like line separator, path separator, etc., ?
+- Using Sytem.getProperty(…) (line.separator, path.separator, …)
+ What is skeleton and stub?
+what is the purpose of those?
+What is the final keyword denotes?
+What is the significance of ListIterator?
+What is the major difference between LinkedList and ArrayList?
+What is nested class?
+What is inner class?
+What is composition?
+What is aggregation?
+What are the methods in Object?
+- clone, equals, wait, finalize, getClass, hashCode, notify, notifyAll, toString
+ Can you instantiate the Math class?
+What is singleton?
+For eg., public class Singleton { private static final Singleton s = new Singleton(); private Singleton() { } public static Singleton getInstance() { return s; } // all non static methods … }
+ What is DriverManager?
+What is Class.forName() does and how it is useful?
+There are 50 sentences.

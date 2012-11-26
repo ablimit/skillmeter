@@ -1,0 +1,38 @@
+What is garbage collection? What is the process that is responsible for doing that in java? - Reclaiming the unused memory by the invalid objects. Garbage collector is responsible for this process
+What kind of thread is the Garbage collector thread? - It is a daemon thread.
+
+What is a daemon thread? - These are the threads which can run without user intervention. The JVM can exit when there are daemon thread by killing them abruptly.
+How will you invoke any external process in Java? - Runtime.getRuntime().exec(….)
+What is the finalize method do? - Before the invalid objects get garbage collected, the JVM give the user a chance to clean up some resources before it got garbage collected.
+What is mutable object and immutable object? - If a object value is changeable then we can call it as Mutable object. (Ex., StringBuffer, …) If you are not allowed to change the value of an object, it is immutable object. (Ex., String, Integer, Float, …)
+What is the basic difference between string and stringbuffer object? - String is an immutable object. StringBuffer is a mutable object.
+What is the purpose of Void class? - The Void class is an uninstantiable placeholder class to hold a reference to the Class object representing the primitive Java type void.
+What is reflection? - Reflection allows programmatic access to information about the fields, methods and constructors of loaded classes, and the use reflected fields, methods, and constructors to operate on their underlying counterparts on objects, within security restrictions.
+What is the base class for Error and Exception? - Throwable
+What is the byte range? -128 to 127
+What is the implementation of destroy method in java.. is it native or java code? - This method is not implemented.
+What is a package? - To group set of classes into a single unit is known as packaging. Packages provides wide namespace ability.
+What are the approaches that you will follow for making a program very efficient? - By avoiding too much of static methods avoiding the excessive and unnecessary use of synchronized methods Selection of related classes based on the application (meaning synchronized classes for multiuser and non-synchronized classes for single user) Usage of appropriate design patterns Using cache methodologies for remote invocations Avoiding creation of variables within a loop and lot more.
+What is a DatabaseMetaData? - Comprehensive information about the database as a whole.
+What is Locale? - A Locale object represents a specific geographical, political, or cultural region
+How will you load a specific locale? - Using ResourceBundle.getBundle(…);
+What is JIT and its use? - Really, just a very fast compiler… In this incarnation, pretty much a one-pass compiler — no offline computations. So you can’t look at the whole method, rank the expressions according to which ones are re-used the most, and then generate code. In theory terms, it’s an on-line problem.
+Is JVM a compiler or an interpreter? - Interpreter
+When you think about optimization, what is the best way to findout the time/memory consuming process? - Using profiler
+What is the purpose of assert keyword used in JDK1.4.x? - In order to validate certain expressions. It effectively replaces the if block and automatically throws the AssertionError on failure. This keyword should be used for the critical arguments. Meaning, without that the method does nothing.
+How will you get the platform dependent values like line separator, path separator, etc., ? - Using Sytem.getProperty(…) (line.separator, path.separator, …)
+What is skeleton and stub? what is the purpose of those? - Stub is a client side representation of the server, which takes care of communicating with the remote server. Skeleton is the server side representation. But that is no more in use… it is deprecated long before in JDK.
+What is the final keyword denotes? - final keyword denotes that it is the final implementation for that method or variable or class. You can’t override that method/variable/class any more.
+What is the significance of ListIterator? - You can iterate back and forth.
+What is the major difference between LinkedList and ArrayList? - LinkedList are meant for sequential accessing. ArrayList are meant for random accessing.
+What is nested class? - If all the methods of a inner class is static then it is a nested class.
+What is inner class? - If the methods of the inner class can only be accessed via the instance of the inner class, then it is called inner class.
+What is composition? - Holding the reference of the other class within some other class is known as composition.
+What is aggregation? - It is a special type of composition. If you expose all the methods of a composite class and route the method call to the composite method through its reference, then it is called aggregation.
+What are the methods in Object? - clone, equals, wait, finalize, getClass, hashCode, notify, notifyAll, toString
+Can you instantiate the Math class? - You can’t instantiate the math class. All the methods in this class are static. And the constructor is not public.
+What is singleton? - It is one of the design pattern. This falls in the creational pattern of the design pattern. There will be only one instance for that entire JVM. You can achieve this by having the private constructor in the class. For eg., public class Singleton { private static final Singleton s = new Singleton(); private Singleton() { } public static Singleton getInstance() { return s; } // all non static methods … }
+What is DriverManager? - The basic service to manage set of JDBC drivers.
+What is Class.forName() does and how it is useful? - It loads the class into the ClassLoader. It returns the Class. Using that you can get the instance ( “class-instance”.newInstance() ).
+Inq adds a question: Expain the reason for each keyword of
+public static void main(String args[])
